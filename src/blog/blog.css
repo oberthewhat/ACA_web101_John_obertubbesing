@@ -19,8 +19,8 @@ body {
 
 main {
     width: 60%;
-    margin: 5% auto;
     background: #83A28A;
+    margin: 5% auto;
     border: solid gray 3px;
     border-radius: 30px;
     box-shadow: 5px 5px 5px grey;
