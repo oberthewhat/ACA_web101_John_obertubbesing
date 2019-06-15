@@ -82,6 +82,7 @@ span {
     grid-row: 1;
     background-color: #659dbd;
     min-width: 650px;
+    max-height: 280px;
 }
 
 .about {
