@@ -1,120 +1,170 @@
-body {
-    margin: auto;
-    align-content: center;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-
-.wrapper {
-    display: grid;
-    width: 100%;
-    grid-gap: 2px;
-    margin: auto;
-    grid-template-rows: auto;
-    grid-template-columns: 5;
-    background-color: #fff;
-    color: #444;
-}
-
-img {
-    border-radius: 100%;
-    float: left;
-    margin-right: 30px;
-}
-
-.progress {
-    background-color: #bc986a;
-    border-radius: 5px;
-}
-
-.html {
-    width: 50%;
-    background-color: #8d8741;
-    border-radius: 5px;
-}
-
-.CSS {
-    width: 25% auto;
-    background-color: #8d8741;
-    border-radius: 5px;
-}
-
-.AutoCAD {
-    width: 75%;
-    background-color: #8d8741;
-    border-radius: 5px;
-}
-
-.Excel {
-    width: 80%;
-    background-color: #8d8741;
-    border-radius: 5px;
-}
-
-.heading2 {
-    font-weight: bold;
-    font-size: 35px
-}
-
-span {
-    font-weight: bolder;
-}
-
-.heading {
-    text-align: center;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.profile-text {
-    font-size: 300%;
-    text-transform: uppercase;
-    letter-spacing: 9px;
-}
-
-.box {
-    color: #fff;
-    padding: 20px;
-    font-size: 150%;
-}
-
-.profile {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    background-color: #659dbd;
-    min-width: 650px;
-}
-
-.about {
-    grid-column: 4 / 5;
-    grid-row: 1 / 3;
-    background-color: #fbeec1;
-    color: #8d8741;
-    width: 300px;
-}
-
-.skills {
-    grid-column: 1 / 2;
-    grid-row: 2;
-    background-color: #fbeec1;
-    color: #8d8741;
-    min-width: 200px;
-}
-
-.experience {
-    grid-column: 2 / 4;
-    grid-row: 2;
-    background-color: #fbeec1;
-    color: #8d8741;
-    max-width: auto;
-}
-
-.experience-name {
-    font-weight: bold;
-    font-size: 35px;
-}
-
-.exp-date {
-    font-size: 16px;
-}
-
-.experience-text {}
+        body {
+            margin: auto;
+            align-content: center;
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        
+        .wrapper {
+            display: grid;
+            width: 100%;
+            grid-gap: 2px;
+            margin: auto;
+            grid-template-rows: auto;
+            grid-template-columns: 5;
+            background-color: #fff;
+            color: #444;
+        }
+        
+        img {
+            border-radius: 100%;
+            float: left;
+            margin-right: 30px;
+        }
+        
+        .progress {
+            background-color: #bc986a;
+            border-radius: 5px;
+        }
+        
+        .html {
+            width: 50%;
+            background-color: #8d8741;
+            border-radius: 5px;
+        }
+        
+        .CSS {
+            width: 25% auto;
+            background-color: #8d8741;
+            border-radius: 5px;
+        }
+        
+        .AutoCAD {
+            width: 75%;
+            background-color: #8d8741;
+            border-radius: 5px;
+        }
+        
+        .Excel {
+            width: 80%;
+            background-color: #8d8741;
+            border-radius: 5px;
+        }
+        
+        .heading2 {
+            font-weight: bold;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+        
+        span {
+            font-weight: bolder;
+        }
+        
+        .heading {
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .profile-text {
+            font-size: 300%;
+            text-transform: uppercase;
+            letter-spacing: 9px;
+            float: left;
+        }
+        
+        .box {
+            color: #fff;
+            padding: 20px;
+            font-size: 150%;
+        }
+        
+        .profile {
+            grid-column: 1 / 5;
+            grid-row: 1;
+            background-color: #659dbd;
+            max-height: 260px;
+        }
+        
+        .about {
+            grid-column: 4 / 5;
+            grid-row: 1 / 3;
+            background-color: #fbeec1;
+            color: #8d8741;
+            width: 300px;
+        }
+        
+        .skills {
+            grid-column: 1 / 2;
+            grid-row: 2;
+            background-color: #fbeec1;
+            color: #8d8741;
+            min-width: 200px;
+        }
+        
+        .experience {
+            grid-column: 2 / 4;
+            grid-row: 2;
+            background-color: #fbeec1;
+            color: #8d8741;
+            max-width: auto;
+        }
+        
+        .experience-name {
+            font-weight: bold;
+            font-size: 35px;
+        }
+        
+        .exp-date {
+            font-size: 16px;
+        }
+        
+        .experience-text {}
+        /* mobile */
+        /* @media (max-width: 590px) and (min-width: 1151) {
+            .profile {
+                grid-column: auto;
+                width: fit-content;
+            }
+            .skills {
+                grid-column: 4/5;
+                grid-row: 1;
+            }
+        } */
+        
+        @media (max-width: 800px) {
+            .profile {}
+            .profile-text {
+                font-size: 35px;
+                letter-spacing: 11px;
+                margin-top: -32px;
+                margin-left: 10%;
+            }
+            img {
+                display: inline-block;
+                margin: -3px 26%;
+            }
+            .skills {
+                grid-column: 1 / 5;
+                grid-row: 2;
+                width: auto;
+                border-bottom: 2px solid #8d8741;
+            }
+            .experience {
+                grid-column: 1 / 5;
+                grid-row: 3;
+                width: auto;
+                border-bottom: 2px solid #8d8741;
+            }
+            .heading {
+                font-weight: bold;
+                font-size: 35px;
+                text-align: left;
+            }
+            .about {
+                grid-column: 1 / 5;
+                grid-row: 4;
+                width: auto;
+                border-bottom: 2px solid #8d8741;
+            }
+        }
