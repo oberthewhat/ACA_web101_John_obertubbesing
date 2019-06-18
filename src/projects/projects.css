@@ -60,6 +60,7 @@ main {
 
 .project1 {
     background: url(../../myprofilepic.jpg);
+    background-size: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 65% 35%;
