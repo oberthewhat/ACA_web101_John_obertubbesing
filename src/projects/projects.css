@@ -55,7 +55,7 @@ main {
     grid-template-rows: 65% 35%;
     background-color: lightcoral;
     border-radius: 6px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 2px 3px 3px gray;
 }
 
 .project1 {
