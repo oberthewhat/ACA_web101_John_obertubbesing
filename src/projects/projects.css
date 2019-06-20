@@ -28,7 +28,26 @@ body {
 
 nav {
     height: 90px;
-    width: 100%
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+}
+
+ul {
+    flex: 2;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
@@ -59,7 +78,7 @@ main {
 }
 
 .project1 {
-    background: url(../../myprofilepic.jpg);
+    ;
     background-size: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
