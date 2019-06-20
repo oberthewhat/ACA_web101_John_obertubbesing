@@ -266,7 +266,7 @@ header {
 .leftbox {
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50% 50%;
     grid-template-columns: 100%;
     border: 5px solid #57BCD1;
     margin-right: 5px;
@@ -283,23 +283,100 @@ header {
 }
 
 .mangos {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 70% 30%;
-}
-
-.mangosimg {
-    grid-column: 1/3;
-    grid-row: 1/3;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
+    background-image: url(./fruit.png);
+    background-repeat: no-repeat;
+    background-size: 67% 68%;
+    background-position: center;
+    margin-top: -14%;
+    justify-content: space-evenly;
 }
 
-.mangoimg img {
-    width: 95%;
-    height: 95%;
+.mangos .description {
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 102%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mangos .price {
+    display: flex;
+    flex-direction: column;
+    background-color: #E13170;
+    color: white;
+    text-align: center;
+    height: 40%;
+    margin-top: auto;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    line-height: 97%;
+    padding: 5px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.mangos .price h1 {
+    font-size: 77%;
+}
+
+.mangos .price h3 {
+    font-size: 150%;
+}
+
+.mangos .price p {
+    font-size: 58%;
+}
+
+.chips {
+    display: grid;
+    background-image: url(./chips.png);
+    background-repeat: no-repeat;
+    background-size: 65% 57%;
+    background-position: center;
+    margin-top: -17%;
+    justify-content: space-evenly;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+}
+
+.chips .description {
+    margin-top: 20%;
+    grid-row: 3;
+}
+
+.chips .price {
+    grid-column: 2;
+    grid-row: 3;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 100%;
+    height: 100%;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    line-height: 15px
+}
+
+.midtext {
+    background-color: #57BCD1;
+    color: white;
+}
+
+.midtext h2 {
+    font-size: 221%;
+    line-height: 80%;
+    margin-left: 17px;
+    margin-top: 12px;
+}
+
+.midtext p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 85%;
+    line-height: 100%;
+    margin-left: 17px;
+    margin-top: 8px;
 }
 
 .bottombar {
