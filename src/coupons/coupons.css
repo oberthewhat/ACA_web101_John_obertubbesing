@@ -290,6 +290,7 @@ header {
     background-position: center;
     margin-top: -14%;
     justify-content: space-evenly;
+    border-bottom: 1px solid rgb(209, 209, 209);
 }
 
 .mangos .description {
@@ -313,7 +314,6 @@ header {
     margin-bottom: 8px;
     line-height: 97%;
     padding: 5px;
-    border-bottom: 1px solid rgb(209, 209, 209);
 }
 
 .mangos .price h1 {
@@ -334,10 +334,11 @@ header {
     background-repeat: no-repeat;
     background-size: 65% 57%;
     background-position: center;
-    margin-top: -17%;
+    margin-top: -18%;
     justify-content: space-evenly;
     grid-template-columns: 50% 50%;
     grid-template-rows: 33.33% 33.33% 33.33%;
+    border-bottom: 1px solid rgb(209, 209, 209);
 }
 
 .chips .description {
@@ -347,10 +348,207 @@ header {
 
 .chips .price {
     grid-column: 2;
-    grid-row: 3;
-    grid-template-rows: 50% 50%;
+    grid-row: 2/4;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 100%;
-    height: 100%;
+    padding-right: 18px;
+    text-align: center;
+    line-height: 133%;
+    margin-top: 34px;
+}
+
+.chips .price h2 {
+    margin-top: 5px;
+}
+
+.chips .price .top {
+    background-color: white;
+    border: 3px solid #F7DA1E;
+}
+
+.chips .price .deal {
+    background-color: #F7DA1E;
+    border: 3px solid #F7DA1E;
+    color: black;
+    line-height: 102%;
+}
+
+.chips .price .deal h4 {
+    font-size: 52%;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0px;
+}
+
+.twinings {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    border-left: 1px solid rgb(209, 209, 209);
+}
+
+.twiningsimg {
+    grid-column: 1/3;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.twiningsimg img {
+    flex-shrink: 0;
+    width: 80%;
+    height: 95%;
+    margin-top: 10px;
+}
+
+.twinings .description {
+    margin-left: -6px;
+}
+
+.twinings .price {
+    text-align: center;
+    border: 3px solid #F7DA1E;
+    margin: 2px;
+    padding-top: 10px;
+    line-height: 106%;
+}
+
+.nuts {
+    display: grid;
+    grid-template-rows: 50% 30% 20%;
+    grid-template-columns: 50% 50%;
+    border-left: 1px solid rgb(209, 209, 209);
+}
+
+.nutsimg {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.nutsimg img {
+    flex-shrink: 0;
+    width: 80%;
+    height: 70%;
+    margin-top: -26px;
+}
+
+.nuts .description {
+    margin-top: -30px
+}
+
+.nutprice1 {
+    grid-column: 2;
+    grid-row: 2/3;
+    background-color: #E13170;
+    color: white;
+    text-align: center;
+    line-height: 110%;
+    margin-right: 3px;
+}
+
+.nutprice1 h1 {
+    font-size: 70%;
+    line-height: 100%;
+}
+
+.nutprice1 h3 {
+    font-size: 150%;
+    padding-top: 3px;
+}
+
+.nutprice1 p {
+    font-size: 58%;
+}
+
+.nutprice2 {
+    background-color: #F7DA1E;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.nutprice2 p {
+    font-size: 52%;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0px;
+    line-height: 100%;
+}
+
+.yogurt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    border-left: 1px solid rgb(209, 209, 209);
+}
+
+.yogurtimg {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.yogurtimg img {
+    flex-shrink: 0;
+    width: 71%;
+    height: 69%;
+    margin-top: -8px;
+}
+
+.yogurt .description {
+    margin-left: -6px;
+    padding-top: 2px;
+    margin-top: -13px;
+}
+
+.yogurt .price {
+    text-align: center;
+    border: 3px solid #F7DA1E;
+    margin: 2px;
+    padding-top: 10px;
+    line-height: 106%;
+}
+
+.mms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    border-left: 1px solid rgb(209, 209, 209);
+}
+
+.mmsimg {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.mms img {
+    flex-shrink: 0;
+    width: 73%;
+    height: 79%;
+    margin-top: -13px;
+}
+
+.mms .description {
+    margin-left: -6px;
+    padding-top: 2px;
+    margin-top: -13px;
+}
+
+.mms .price {
+    text-align: center;
+    border: 3px solid #F7DA1E;
+    margin: 2px;
+    padding-top: 10px;
+    line-height: 106%;
 }
 
 li {
