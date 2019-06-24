@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="./dashboard.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,18 +16,55 @@
         <div class="logo">
             OBERDASH
         </div>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">SEARCH</a></li>
-            <li><a href="">MEDIA</a></li>
-            <li><a href="">CONTACT</a></li>
-        </ul>
+        <div class="container">
+            <input type="text" placeholder="Search...">
+            <div class="search"></div>
+        </div>
+
+
 
     </nav>
     <div class="headerbar">
     </div>
     <main>
         <div class="main">
+            <div class="sidebar">
+                <a href="" title="Home">
+                    <div class="home">
+                        <img src="./house-48.png" alt="">
+                    </div>
+                </a>
+                <a href="" title="Messages">
+                    <div class="messages">
+                        <img src="./message-2-48.png" alt="">
+                    </div>
+                </a>
+                <a href="" title="Daily report">
+                    <div class="report">
+                        <img src="./report-2-48.png" alt="">
+                    </div>
+                </a>
+                <a href="" title="Trends">
+                    <div class="linegraph">
+                        <img src="./line-48.png" alt="">
+                    </div>
+                </a>
+                <a href="" title="quotas">
+                    <div class="piegraph">
+                        <img src="./pie-chart-48.png" alt="">
+                    </div>
+                </a>
+                <a href="" title="Deals">
+                    <div class="money">
+                        <img src="./dollar-3-48.png" alt="">
+                    </div>
+                </a>
+                <a href="" title="settings">
+                    <div class="settings">
+                        <img src="./gear-2-48.png" alt="">
+                    </div>
+                </a>
+            </div>
             <div class="teamquota cells">
                 <h1>Team Quota</h1>
                 <div class="cellbar"></div>
@@ -34,40 +72,89 @@
                 </div>
             </div>
             <div class="salescontest cells">
-                <h1>Current Sales Contest</h1>
+                <h1>Current Sales</h1>
                 <div class="cellbar"></div>
                 <div class="graph">
                     <br>John:
                     <div class="progress">
-                        <div class="john" style="height:24px;width:100%">$500</div>
+                        <div class="john" style="height:24px;width:100%">
+                            <p>$500</p>
+                        </div>
                     </div>
                     Alex:
                     <div class="progress">
-                        <div class="alex" style="height:24px;width:75%">$450</div>
+                        <div class="alex" style="height:24px;width:75%">
+                            <p>$425</p>
+                        </div>
                     </div>
                     David:
                     <div class="progress">
-                        <div class="david" style="height:24px;width:50%">$250</div>
+                        <div class="david" style="height:24px;width:50%">
+                            <p>$250</p>
+                        </div>
                     </div>
                     Vincent:
                     <div class="progress">
-                        <div class="vincent" style="height:24px;width:35%">$200</div>
+                        <div class="vincent" style="height:24px;width:35%">
+                            <p>$200</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="closed border1 cells">
-                <h1>Team Closed Deals</h1>
+            <div class="closed cells">
+                <h1>Sales By Dept.</h1>
                 <div class="cellbar"></div>
+                <div class='barcontainer'>
+                    <div class='barcontainerheader'>
+
+                    </div>
+                    <div class='bar' style='height:12%'>
+
+                        <div class='barlabel'>
+                            Tech
+                        </div>
+                    </div>
+                    <div class='bar' style='height: 35%'>
+
+                        <div class='barlabel'>
+                            Food
+                        </div>
+                    </div>
+                    <div class='bar' style='height: 75%'>
+
+                        <div class='barlabel'>
+                            Lesiure
+                        </div>
+                    </div>
+                    <div class='bar' style='height:15%'>
+
+                        <div class='barlabel'>
+                            Travel </div>
+                    </div>
+                    <div class='bar' style='height:45%'>
+
+                        <div class='barlabel'>
+                            Events
+                        </div>
+                    </div>
+                    <div class='bar' style='height:30%'>
+
+                        <div class='barlabel'>
+                            Style
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="win border1 cells">
+            <div class="win cells">
                 <h1>Sales Win Rate</h1>
                 <div class="cellbar"></div>
+
             </div>
-            <div class="bustype border1 cells">
+            <div class="bustype cells">
                 <h1>Closed Business Type</h1>
                 <div class="cellbar"></div>
             </div>
-            <div class="pipeline border1 cells">
+            <div class="pipeline cells">
                 <h1>In The Pipeline</h1>
                 <div class="cellbar"></div>
             </div>
