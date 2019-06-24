@@ -6,8 +6,8 @@
 
 body {
     width: 100%;
-    height: auto;
     background-image: linear-gradient(rgb(19, 13, 31), rgb(54, 36, 90), rgb(255, 153, 57));
+    background-attachment: fixed;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -18,6 +18,7 @@ body {
 .cells {
     background-color: rgb(204, 204, 204);
     font-size: 75%;
+    max-height: 400px;
 }
 
 nav {
@@ -44,6 +45,7 @@ nav {
 }
 
 .logoimg {
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,8 +54,9 @@ nav {
 
 .logoimg img {
     flex-shrink: 0;
-    width: 50%;
+    width: 60px;
     margin-top: 10px;
+    min-width: 50%;
 }
 
 .logo {
@@ -61,14 +64,14 @@ nav {
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 300%;
-    margin: -2%;
+    margin: 1%;
 }
 
 .main {
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: 1% 27% 27% 27%;
-    grid-template-rows: 66% 66%;
+    grid-template-rows: 60% 60%;
     grid-row-gap: 8%;
     margin: 30px;
 }
@@ -139,9 +142,8 @@ h1 {
 
 .barcontainer {
     position: relative;
-    border-radius: 5px 5px 0 0;
     width: 100%;
-    margin: -21px auto;
+    margin: -18px auto;
     min-height: 244px;
     max-height: 29px;
     min-width: 77%;
@@ -154,7 +156,7 @@ h1 {
     display: inline-block;
     bottom: 0;
     background-image: linear-gradient( rgb(255, 166, 0), rgb(255, 214, 139));
-    width: 12%;
+    width: 15%;
     text-align: center;
     color: white;
     box-shadow: 4px 0 8px #888;
@@ -194,20 +196,72 @@ h1 {
 }
 
 .cells:hover {
-    box-shadow: 6px 6px 6px rgba(128, 128, 128, 0.459);
+    box-shadow: 6px 6px 6px rgba(252, 252, 252, 0.459);
 }
 
 .progress p {
     margin-right: 3px;
 }
 
+.trends {
+    display: flex;
+    flex-direction: column;
+}
+
+.trendsimg {
+    height: 66%;
+    min-height: 66%;
+    /* max-height: 95%; */
+    width: 96%;
+    background-image: url(./SeekPng.com_graph-png_142766.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2%;
+    border: 1px solid white;
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 150%;
+}
+
 .sidebar {
     grid-column: 1;
-    grid-row: 1/3;
+    grid-row: 1/4;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
     flex-direction: column;
+}
+
+.lesiure {
+    color: #46B29D;
+    font-weight: bold;
+}
+
+.events {
+    font-weight: bold;
+    color: #324D5C;
+}
+
+.travel {
+    font-weight: bold;
+    color: #E37B40;
+}
+
+.arrowimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.arrowimg img {
+    width: 40%;
 }
 
 .container {
@@ -341,18 +395,51 @@ input:after {
     width: 100%;
 }
 
-@media (max-width:765px) {
+@media (max-width:769px) {
+    body {
+        background-image: linear-gradient(rgb(19, 13, 31), rgb(54, 36, 90), rgb(255, 153, 57));
+        background-attachment: fixed;
+    }
+    .sidebar {
+        justify-content: space-between;
+    }
+    .main {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1% 40% 40%;
+        grid-template-rows: 40% 40% 40%;
+        grid-gap: 1%;
+    }
+    .teamquota {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35px 6px 350px;
+    }
+    .quotaimg {
+        background-image: url(./173756.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center;
+        margin-top: -120px;
+    }
+    .cells {
+        margin-top: inherit;
+    }
+    .barcontainer {
+        margin: 1%;
+        min-height: 212px;
+    }
+}
+
+@media (max-width:600px) {
     .sidebar {
         display: none;
-    }
-    .container {}
-    body {
-        height: auto;
     }
     .logo {
         display: none;
     }
     .main {
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -374,6 +461,14 @@ input:after {
         margin-top: inherit;
     }
     .barcontainer {
-        margin: 5%;
+        margin: 1%;
+    }
+    .trends {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 35px 6px 260px;
+    }
+    .trendsimg {
+        height: 94%;
     }
 }
