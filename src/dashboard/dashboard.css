@@ -43,12 +43,25 @@ nav {
     background-image: linear-gradient(to right, rgb(19, 13, 31), rgb(255, 166, 0));
 }
 
+.logoimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.logoimg img {
+    flex-shrink: 0;
+    width: 50%;
+    margin-top: 10px;
+}
+
 .logo {
     flex: 1;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 300%;
-    margin: 3%;
+    margin: -2%;
 }
 
 .main {
@@ -149,11 +162,10 @@ h1 {
 
 .barlabel {
     position: absolute;
-    border-top: 2px solid black;
+    border: 1px solid white;
     background: rgb(54, 36, 90);
     bottom: 0;
     width: 100%;
-    text-shadow: 1px 1px 0px black;
     color: white;
 }
 
@@ -333,11 +345,12 @@ input:after {
     .sidebar {
         display: none;
     }
-    .container {
-        display: none;
-    }
+    .container {}
     body {
         height: auto;
+    }
+    .logo {
+        display: none;
     }
     .main {
         display: flex;
