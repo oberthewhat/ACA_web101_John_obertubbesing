@@ -44,6 +44,10 @@
         font-weight: bold;
     }
     
+    #mobile-nav {
+        display: none;
+    }
+    
     .main {
         margin: 0 0 13px;
         padding: 0;
@@ -215,4 +219,75 @@
     
     .footer .social2 ul li #pinterest:hover {
         background-position: -44px -132px;
+    }
+    
+    @media (max-width:500px) {
+        header nav li {
+            display: none;
+        }
+        .examples {
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            min-width: 100%;
+        }
+        .mainimg {
+            background-image: url(./the-beacon\ -\ mobile.jpg);
+            width: 100%;
+            overflow: hidden;
+        }
+        .footer {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text {
+            left: 0%;
+            padding-left: 16px;
+            margin-left: 0px;
+            margin-top: -222px;
+            position: absolute;
+            top: 50%;
+            text-align: left;
+            width: 100%;
+        }
+        .dropbtn {
+            background-color: #0ba39c;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        #mobile-nav {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: #0ba39bd8;
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: white;
+            font-size: 150%;
+            border: 1px solid white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #0000009a;
+        }
+        /* Show the dropdown menu on hover */
+        #mobile-nav:hover .dropdown-content {
+            display: block;
+        }
     }
