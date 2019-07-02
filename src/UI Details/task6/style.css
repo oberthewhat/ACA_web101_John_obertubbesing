@@ -1,0 +1,46 @@
+.border {
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+.main {
+    margin: 8px;
+    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 40% 40%;
+    grid-gap: 8px;
+}
+
+.cell {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 20% 80%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cell>p {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: 20px;
+    margin-right: 6px;
+    font-weight: bold;
+    color: gray;
+}
+
+.icon {
+    font-size: 35px;
+    text-align: center;
+    color: #949CCF;
+}
+
+h1 {
+    font-size: 126%;
+    margin: 3px 20px;
+    color: #949CCF
+}
