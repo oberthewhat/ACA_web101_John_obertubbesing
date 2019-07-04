@@ -59,6 +59,7 @@ a:hover {
 
 .main p {
     width: 75%;
+    opacity: .8;
 }
 
 .buttons {
