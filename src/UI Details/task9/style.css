@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+}
+
+.border {
+    border: 1px solid red
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid hsl(5, 53%, 60%);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.555);
+    height: 90px;
+    background-color: #f1f1f1;
+}
+
+.main {
+    height: 400px;
+    background-color: #EFEFE7;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-weight: bold;
+    font-family: 'Georgia';
+    font-style: italic;
+    opacity: .8;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: .875rem;
+    font-weight: 500;
+    width: 20%;
+    margin-left: -10%;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    margin-right: 8%;
+    opacity: .9;
+}
+
+.login button {
+    width: 45%;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: .875rem;
+    font-weight: 500;
+    opacity: .9;
+}
+
+.logbutton {
+    border: 1px solid gray;
+    background-color: #f1f1f1;
+    opacity: .9;
+}
+
+.signup {
+    border: none;
+    background-color: hsl(5, 53%, 60%);
+    color: white;
+    font-weight: bold;
+}
+
+.logbutton:hover {
+    background-color: #e4e4e4;
+}
+
+button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+a {
+    -webkit-appearance: none;
+    text-decoration: none;
+    color: inherit;
+    opacity: .8;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 25px;
+}
+
+.text {
+    width: 85%;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.719);
+}
+
+.text h2 {
+    font-size: 1.75rem;
+    max-width: 35rem;
+    line-height: 1.2;
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+
+.trial {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: hsl(5, 53%, 60%);
+    color: rgba(255, 255, 255, 0.795);
+    width: 200px;
+    opacity: .9;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.trial h2 {
+    color: white;
+}
+
+.trial:hover {
+    opacity: 1;
+}
