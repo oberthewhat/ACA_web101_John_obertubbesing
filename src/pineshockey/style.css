@@ -1,0 +1,166 @@
+/* #EAAA00 yellow
+#DDCBA4 wheat
+#154734 Green
+#A6192E red */
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Sintony, Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url(./photos/background.jpg);
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.league {
+    height: 30px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pondlogo img {
+    height: 30px;
+}
+
+.league a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+}
+
+.pondwords {
+    font-family: 'Russo One', sans-serif;
+}
+
+.nav {
+    width: 100%;
+    height: 45px;
+    background-color: #DDCBA4;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    height: 100%;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 13px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    background-color: #154734;
+    font-family: 'Audiowide', cursive;
+    display: flex;
+    color: #DDCBA4;
+    font-size: 45px;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+}
+
+.logo h3 {
+    margin-left: -36px;
+    font-style: italic;
+}
+
+.logo img {
+    position: relative;
+    height: 155px;
+    padding-left: 15px;
+    margin-top: -11px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 80px 0 80px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    opacity: .7;
+}
+
+.nav a:hover {
+    opacity: 1;
+}
+
+.newsline {
+    width: 100%;
+    height: 30px;
+    background-color: #A6192E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.newsline a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.newsline a:hover {
+    color: rgb(218, 218, 218);
+}
