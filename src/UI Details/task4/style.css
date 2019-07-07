@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container {
+    height: 300px;
+    margin: 15%;
+    display: flex;
+    flex-direction: row;
+}
+
+.touch {
+    font-family: 'Just Another Hand', cursive;
+    background-image: linear-gradient(rgb(0, 143, 209), rgb(1, 217, 255));
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 25px;
+    margin: 4px 2px;
+    text-shadow: 1px 1px 1px rgba(95, 95, 95, 0.685);
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.touch:hover {
+    opacity: 1;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.493);
+    margin-top: -2px;
+}
+
+.involved {
+    font-family: 'Just Another Hand', cursive;
+    background-image: linear-gradient(rgb(192, 18, 18), rgb(255, 115, 0));
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    border-radius: 8px;
+    text-shadow: 1px 1px 1px rgba(95, 95, 95, 0.685);
+    font-size: 25px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.involved:hover {
+    opacity: 1;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.493);
+    margin-top: -2px;
+}

@@ -1,0 +1,91 @@
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Open Sans', 'Roboto', sans-serif;
+    color: white;
+}
+
+.body {
+    background-blend-mode: multiply;
+    background-image: url(./coaster.jpg);
+    background-color: rgb(85, 95, 182);
+    background-size: 100%;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 8%;
+    font-size: 1.5em;
+}
+
+.nav {
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 8%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+.main {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 8%;
+    padding-top: 10%;
+}
+
+.main h2 {
+    font-size: 2.5em;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.main p {
+    width: 75%;
+    opacity: .8;
+}
+
+.buttons {
+    margin-top: 8%;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    width: 150px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.learn {
+    background-color: rgb(241, 228, 106);
+    color: rgb(85, 95, 182);
+}
+
+.see {
+    background: none;
+    border: 1px solid white;
+}
+
+button:hover {
+    transform: translateY(2px)
+}
