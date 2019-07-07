@@ -1,0 +1,293 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        min-width: 960px;
+        font-size: 14px;
+        line-height: 1;
+    }
+    
+    .border {
+        border: 1px solid red;
+    }
+    
+    header {
+        display: block;
+        height: 260px;
+        text-align: center;
+    }
+    
+    .logoimg {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .logoimg img {
+        padding: 40px;
+    }
+    
+    nav li {
+        list-style: none;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        color: #252525;
+        display: inline-block;
+        font-size: 14px;
+        padding: 3px 23px;
+        font-weight: bold;
+    }
+    
+    #mobile-nav {
+        display: none;
+    }
+    
+    .main {
+        margin: 0 0 13px;
+        padding: 0;
+        position: relative;
+        width: 100%;
+    }
+    
+    .mainimg {
+        width: 100%;
+        height: 59%;
+        background-image: url(./the-beacon.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .text {
+        left: 53%;
+        margin-left: 0px;
+        margin-top: -170px;
+        position: absolute;
+        top: 50%;
+        text-align: left;
+        width: 493px;
+    }
+    
+    .text h2 {
+        background: #fff;
+        color: #000;
+        display: inline-block;
+        font-family: poller_oneregular;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 0 18px;
+        padding: 23px 27px 20px;
+        text-transform: uppercase;
+    }
+    
+    .text span {
+        background: #252525;
+        color: #fff;
+        display: inline-block;
+        font-size: 20px;
+        margin: 7px 0;
+        padding: 12px 27px;
+    }
+    
+    .text a {
+        background: #0ba39c;
+        color: #fff;
+        display: inline-block;
+        font-size: 16px;
+        margin: 15px 0 0;
+        padding: 26px 27px 22px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .examples {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 28px 0 33px 0;
+    }
+    
+    .examples img {
+        border: 2px solid black;
+    }
+    
+    .examples .ex a h2 {
+        font-family: poller_oneregular;
+        margin: 5%;
+        text-decoration: none;
+    }
+    
+    .examples .ex a {
+        text-decoration: none;
+    }
+    
+    .examples .ex a:visited {
+        color: #000;
+    }
+    
+    .ex a img {
+        opacity: .8;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .ex a:hover img {
+        opacity: 1;
+    }
+    
+    footer {
+        background: #252525;
+        margin: 0;
+        padding: 36px 0 42px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0;
+        width: 960px;
+    }
+    
+    .footer .social p {
+        color: #fff;
+        line-height: 44px;
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+    
+    .footer .social2 ul {
+        margin: 0;
+        display: flex;
+        overflow: hidden;
+        padding: 0;
+        width: 256px;
+    }
+    
+    .footer .social2 ul li {
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+        width: 44px;
+    }
+    
+    .footer .social2 ul li a {
+        background: url(./icons.jpg) no-repeat 0 0;
+        display: block;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        text-indent: -99999px;
+        width: 44px;
+    }
+    
+    .footer .social2 ul li #twitter {
+        background-position: 0 0;
+    }
+    
+    .footer .social2 ul li #twitter:hover {
+        background-position: -44px 0;
+    }
+    
+    .footer .social2 ul li #facebook {
+        background-position: 0 -44px;
+    }
+    
+    .footer .social2 ul li #facebook:hover {
+        background-position: -44px -44px;
+    }
+    
+    .footer .social2 ul li #googleplus {
+        background-position: 0 -88px;
+    }
+    
+    .footer .social2 ul li #googleplus:hover {
+        background-position: -44px -88px;
+    }
+    
+    .footer .social2 ul li #pinterest {
+        background-position: 0 -132px;
+    }
+    
+    .footer .social2 ul li #pinterest:hover {
+        background-position: -44px -132px;
+    }
+    
+    @media (max-width:500px) {
+        header nav li {
+            display: none;
+        }
+        .examples {
+            display: flex;
+            flex-direction: column;
+        }
+        body {
+            min-width: 100%;
+        }
+        .mainimg {
+            background-image: url(./the-beacon\ -\ mobile.jpg);
+            width: 100%;
+            overflow: hidden;
+        }
+        .footer {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text {
+            left: 0%;
+            padding-left: 16px;
+            margin-left: 0px;
+            margin-top: -222px;
+            position: absolute;
+            top: 50%;
+            text-align: left;
+            width: 100%;
+        }
+        .dropbtn {
+            background-color: #0ba39c;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        #mobile-nav {
+            position: relative;
+            display: inline-block;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: relative;
+            background-color: #0ba39bd8;
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: white;
+            font-size: 150%;
+            border: 1px solid white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #0000009a;
+        }
+        /* Show the dropdown menu on hover */
+        #mobile-nav:hover .dropdown-content {
+            display: block;
+        }
+    }
