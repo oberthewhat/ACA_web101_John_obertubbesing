@@ -10,6 +10,10 @@
     font-family: Sintony, Arial, sans-serif;
 }
 
+.border {
+    border: 1px solid red;
+}
+
 body {
     width: 100%;
     background-image: url(./photos/background.jpg);
@@ -32,8 +36,13 @@ header {
     align-items: center;
 }
 
+.official {
+    font-size: 15px;
+}
+
 .pondlogo img {
-    height: 30px;
+    height: 33px;
+    padding-left: 5px;
 }
 
 .league a {
@@ -45,6 +54,10 @@ header {
 
 .pondwords {
     font-family: 'Russo One', sans-serif;
+}
+
+.mobilenav {
+    display: none;
 }
 
 .nav {
@@ -107,7 +120,7 @@ header {
     width: 100%;
     height: 60px;
     background-color: #154734;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Russo One', sans-serif;
     display: flex;
     color: #DDCBA4;
     font-size: 45px;
@@ -118,6 +131,8 @@ header {
 .logo h3 {
     margin-left: -36px;
     font-style: italic;
+    font-family: 'Russo One', sans-serif;
+    margin-top: -4px;
 }
 
 .logo img {
@@ -125,6 +140,14 @@ header {
     height: 155px;
     padding-left: 15px;
     margin-top: -11px;
+}
+
+.desktop-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 30px 0 60px;
 }
 
 .nav {
@@ -145,6 +168,46 @@ header {
     opacity: 1;
 }
 
+.dropbtn {
+    background-color: #154734;
+    color: white;
+    width: 100%;
+    padding: 5 26 5 26;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    margin-top: 30px;
+    align: center;
+    background-color: #f9f9f9c0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #A6192E;
+    color: white;
+}
+
+.mobilenav:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
 .newsline {
     width: 100%;
     height: 30px;
@@ -153,6 +216,7 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
+    margin-bottom: 25px;
 }
 
 .newsline a {
@@ -163,4 +227,90 @@ header {
 
 .newsline a:hover {
     color: rgb(218, 218, 218);
+}
+
+.main {
+    height: 100%;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: 65% 31%;
+    grid-gap: 3%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.leadimg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+    color: rgba(0, 0, 0, 0.76);
+}
+
+.leadimg h2 {
+    font-weight: 600;
+    padding: 5px 5%;
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.247);
+}
+
+.leadimg p {
+    padding: 5px 5%;
+    color: rgba(0, 0, 0, 0.671);
+    font-weight: 500;
+}
+
+.leadimg img {
+    width: 100%;
+    box-shadow: 2px 0 2px rgba(63, 63, 63, 0.473);
+    border: 1px solid #DDCBA4;
+}
+
+.head {
+    background-color: #154734;
+    height: 40px;
+    color: #DDCBA4;
+    font-weight: 400;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    padding-left: 5px;
+}
+
+.welcomebox {
+    height: 40%;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #DDCBA4;
+    box-shadow: 2px 2px 2px 2px rgba(63, 63, 63, 0.473);
+}
+
+.right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    width: 100%;
+    ;
+    height: 250px;
+    background-color: #e9e9e9;
+}
+
+@media (max-width:650px) {
+    .desktop-nav {
+        display: none;
+    }
+    .mobilenav {
+        display: flex;
+    }
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 20px 0 20px;
+    }
 }
