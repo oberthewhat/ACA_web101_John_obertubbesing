@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    height: 200px;
+    background-color: rgb(255, 139, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.747);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.747);
+}
+
+header h2 {
+    font-size: 180px;
+}
+
+.main {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    margin: 5px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.747);
+}
