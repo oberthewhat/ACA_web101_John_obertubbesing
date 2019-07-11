@@ -29,6 +29,8 @@ header {
 .logo h2 {
     font-weight: 400;
     letter-spacing: 3px;
+    animation: flash .5s 2;
+    animation-delay: 2s;
 }
 
 header a {
@@ -71,12 +73,16 @@ header a {
     height: 250px;
     background-color: rgb(222, 235, 235);
     border-bottom: 1px solid rgba(128, 128, 128, 0.651);
+    animation-name: body;
+    animation-duration: 2s;
 }
 
 .top h2 {
     font-size: 225%;
     color: orangered;
     letter-spacing: 2px;
+    animation-name: name;
+    animation-duration: 3s;
 }
 
 .top p {
@@ -91,6 +97,8 @@ img {
     padding: 6px;
     background-color: white;
     border: 1px solid gray;
+    animation-name: name;
+    animation-duration: 3s;
 }
 
 .bottom {
@@ -113,6 +121,8 @@ img {
     list-style: none;
     line-height: 45px;
     margin-left: 60px;
+    animation-name: linksrise;
+    animation-duration: 2s;
 }
 
 .links i {
@@ -185,6 +195,49 @@ img {
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+@keyframes body {
+    from {
+        height: 350px;
+    }
+    to {
+        height: 250px;
+    }
+}
+
+@-webkit-keyframes flash {
+    30% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes linksrise {
+    from {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes name {
+    from {
+        letter-spacing: 8px;
+        opacity: 0;
+    }
+    to {
+        letter-spacing: 2px;
+        opacity: 1;
+    }
 }
 
 @media (max-width:800px) {
