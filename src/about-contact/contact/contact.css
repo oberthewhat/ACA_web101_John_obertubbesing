@@ -1,0 +1,187 @@
+/* Include 6 of the following:
+p
+h1, h2, h3, h4, h5, h6~~~~~~~~~~~~~
+ol, ul~~~~~~~~~~~~~~~~
+pre
+address~~~~~~~~~~~~~~~
+blockquote
+dl
+div~~~~~~~~~~~~~~~~~
+fieldset
+form~~~~~~~~~~~~~~~~~~~
+hr~~~~~~~~~~~~~~~~~~
+noscript
+table
+
+Include 8 of the following:
+<b>~~~~~~~~~~~~~~~~
+<i>~~~~~~~~~~~~~~~~~~~
+<u>~~~~~~~~~~~~~~~
+<em>
+<strong>~~~~~~~~~~~~~~~~
+<sup>~~~~~~~~~~~~~~~
+<sub>~~~~~~~~~~~~~~~~
+<big>
+<small>~~~~~~~~~~~~~~~~
+<li>~~~~~~~~~~~~~~~~
+<ins>
+<del>
+<code>
+<cite>
+<dfn>
+<kbd>
+<var> */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+Body {
+    width: 100%;
+    color: white;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(243, 153, 120);
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid rgb(255, 255, 255);
+}
+
+.main {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./contactimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 88, 55, 0.616);
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 70% 25%;
+    grid-template-rows: 5% 95%;
+}
+
+h2 {
+    margin-top: 25px;
+    font-size: 35px;
+}
+
+img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    letter-spacing: 1px;
+}
+
+ul {
+    margin-top: 20px;
+    line-height: 250%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(243, 153, 120);
+    color: rgba(0, 88, 55, 0.616);
+    font-weight: 800;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    color: white;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.left h2 {
+    padding-left: 20px;
+}
+
+.alien {
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.alien img {
+    height: 60px;
+    animation-name: alien;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.thanks {
+    margin-top: 25px;
+}
+
+@keyframes alien {
+    0% {
+        transform: translateX(800px);
+    }
+    50% {
+        transform: translateX(0px)
+    }
+    100% {
+        transform: translateX(800px)
+    }
+}
+
+@media (max-width:500px) {
+    .alien {
+        display: none;
+    }
+    body {
+        height: 150%;
+    }
+    header {
+        font-size: 100px;
+    }
+    img {
+        display: none;
+    }
+    .main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        background-color: rgba(0, 88, 55, 0.616);
+    }
+}
