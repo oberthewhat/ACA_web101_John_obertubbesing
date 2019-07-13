@@ -1,3 +1,37 @@
+/* Include 6 of the following:
+p~~~~~~~~~~~~~~~~~~~~~~~~~~
+h1, h2, h3, h4, h5, h6~~~~~~~~~~~~~~
+ol, ul~~~~~~~~~~~~~~~~
+pre
+address
+blockquote~~~~~~~~~~~
+dl
+div~~~~~~~~~~~~~
+fieldset
+form
+hr~~~~~~~~~~~~~~
+noscript
+table
+
+Include 8 of the following:
+<b>~~~~~~~~~~~~~~
+<i>~~~~~~~~~~~~~~~
+<u>
+<em>
+<strong>~~~~~~~~~~~~
+<sup>
+<sub>
+<big>
+<small>~~~~~~~~~~~~~
+<li>~~~~~~~~~~~~
+<ins>~~~~~~~~~~~
+<del>~~~~~~~~~~~~
+<code>
+<cite>
+<dfn>
+<kbd>
+<var> */
+
 * {
     margin: 0;
     padding: 0;
@@ -62,6 +96,7 @@ blockquote li {
     img {
         height: 60px;
         width: 60px;
+        margin-top: 18px;
     }
     .main {
         display: flex;
