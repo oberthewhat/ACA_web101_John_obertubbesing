@@ -409,4 +409,7 @@ a {
         background-image: url(./photos/background.jpg);
         background-size: cover;
     }
+    .newsline a {
+        padding-left: 80px;
+    }
 }
