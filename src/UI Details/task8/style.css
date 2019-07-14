@@ -1,0 +1,35 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.main {
+    width: 60%;
+    height: 300px;
+    margin: 35px;
+    background-color: #f1f1f1;
+}
+
+.top {
+    margin: 25px;
+    color: #000000c0;
+}
+
+li {
+    list-style: none;
+    text-indent: -1.4em;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    line-height: 48px;
+    color: #000000c0;
+}
+
+li i {
+    color: rgba(143, 112, 204, 0.911);
+}

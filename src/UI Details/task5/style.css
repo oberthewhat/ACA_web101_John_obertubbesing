@@ -1,0 +1,59 @@
+.border {
+    border: 1px solid red;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    margin: 10%;
+    height: 200px;
+    width: 75%;
+    background: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cell {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 50;
+    margin: 20px;
+    width: 30%;
+    background: white;
+    box-shadow: 3px 3px 3px rgba(197, 197, 197, 0.315);
+    border-radius: 5px;
+}
+
+.text {
+    margin: 44px 19px;
+    line-height: 0;
+}
+
+.cell .text .line {
+    width: 100%;
+    max-width: 5rem;
+    height: 3px;
+    margin: 1rem 0 2rem;
+    background: #11B8AB;
+    margin-top: 30px;
+}
+
+.sales {
+    display: flex;
+    align-items: center;
+    margin-top: -18px;
+}
+
+h1 {
+    font-size: 115%;
+}
+
+.sales p {
+    margin-left: 7px;
+}
+
+.text>p {
+    margin-top: 19%;
+}
