@@ -373,6 +373,12 @@ a {
     }
 }
 
+@media (max-width:750px) {
+    .league {
+        display: none;
+    }
+}
+
 @media (max-width:650px) {
     .league {
         display: none;
@@ -401,6 +407,6 @@ a {
     }
     body {
         background-image: url(./photos/background.jpg);
-        background-size: auto;
+        background-size: cover;
     }
 }
