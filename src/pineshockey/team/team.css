@@ -221,6 +221,32 @@ header {
     color: rgb(218, 218, 218);
 }
 
+.teamcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.rostercell {
+    height: 200px;
+    width: 95%;
+    background-color: #DDCBA4;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.cellheader {
+    background-color: #A6192E;
+    color: white;
+}
+
+.cellheader h2 {
+    padding-left: 2%;
+}
+
+.rostercell img {
+    height: 200px;
+}
+
 @media (max-width:650px) {
     .league {
         display: none;
