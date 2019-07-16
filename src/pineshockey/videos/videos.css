@@ -271,7 +271,7 @@ iframe {
         padding-top: -6px;
     }
     body {
-        background-image: url(./photos/background.jpg);
+        background-image: url(../photos/background.png);
         background-size: auto;
     }
 }

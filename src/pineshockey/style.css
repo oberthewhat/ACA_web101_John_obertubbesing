@@ -140,6 +140,8 @@ header {
     height: 155px;
     padding-left: 15px;
     margin-top: -11px;
+    animation-name: skate;
+    animation-duration: 1s;
 }
 
 .desktop-nav {
@@ -356,6 +358,17 @@ a {
     width: 100%;
 }
 
+@keyframes skate {
+    0% {
+        transform: translateX(600%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @media (max-width:650px) {
     .league {
         display: none;
@@ -383,7 +396,7 @@ a {
         padding-top: -6px;
     }
     body {
-        background-image: url(./photos/background.jpg);
+        background-image: url(./photos/background.png);
         background-size: auto;
     }
 }

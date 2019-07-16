@@ -253,6 +253,17 @@ header {
     width: 100%;
 }
 
+@keyframes skate {
+    0% {
+        transform: translateX(400%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
@@ -300,7 +311,7 @@ header {
         padding-top: -6px;
     }
     body {
-        background-image: url(./photos/background.jpg);
+        background-image: url(../photos/background.png);
         background-size: auto;
     }
 }
