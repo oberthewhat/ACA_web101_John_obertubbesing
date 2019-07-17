@@ -377,11 +377,6 @@ a {
     width: 100%;
 }
 
-<<<<<<< HEAD
-@media (max-width:750px) {
-    .league {
-        display: none;
-=======
 @keyframes ticker {
     0% {
         transform: translateX(150px)
@@ -402,7 +397,6 @@ a {
     100% {
         transform: translateX(0);
         opacity: 1;
->>>>>>> pines
     }
 }
 
@@ -437,15 +431,7 @@ a {
         padding-top: -6px;
     }
     body {
-<<<<<<< HEAD
-        background-image: url(./photos/background.jpg);
-        background-size: cover;
-    }
-    .newsline a {
-        padding-left: 80px;
-=======
         background-image: url(./photos/background.png);
         background-size: auto;
->>>>>>> pines
     }
 }
