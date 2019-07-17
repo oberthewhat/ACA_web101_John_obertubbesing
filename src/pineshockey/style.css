@@ -1,7 +1,24 @@
 /* #EAAA00 yellow
 #DDCBA4 wheat
 #154734 Green
-#A6192E red */
+#A6192E red 
+
+Draw up your wireframe
+20pts - Landing page - responsive
+Add transparent header with links~~~~~
+Facebook~~~~~~
+Instagram~~~~~~~~
+About Page
+20pts - About Page - responsive
+Add a related video to the About Page
+Link About Page in header
+20pts - Article Page - responsive
+Replicate the Article Page into three different files
+Link separately
+20pts - Animate two parts of the website
+10pts - Use GoogleFonts
+10pts - Add it to your Portfolio page and link it
+*/
 
 * {
     margin: 0%;
@@ -41,7 +58,7 @@ header {
 }
 
 .pondlogo img {
-    height: 33px;
+    height: 27px;
     padding-left: 5px;
 }
 
@@ -215,7 +232,7 @@ header {
     height: 30px;
     background-color: #A6192E;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     color: white;
     margin-bottom: 25px;
@@ -225,6 +242,8 @@ header {
     text-decoration: none;
     color: inherit;
     font-weight: 500;
+    animation: ticker 6s;
+    animation-iteration-count: infinite;
 }
 
 .newsline a:hover {
@@ -358,9 +377,21 @@ a {
     width: 100%;
 }
 
+@keyframes ticker {
+    0% {
+        transform: translateX(150px)
+    }
+    50% {
+        transform: translateX(75vw)
+    }
+    100% {
+        transform: translateX(150px)
+    }
+}
+
 @keyframes skate {
     0% {
-        transform: translateX(600%);
+        transform: translateX(100vw);
         opacity: 0;
     }
     100% {
@@ -389,6 +420,9 @@ a {
         flex-direction: column;
     }
     .social {
+        margin-top: 81px;
+    }
+    .socialcell {
         margin-top: 25px;
     }
     .logo {
