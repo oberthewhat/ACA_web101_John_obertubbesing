@@ -265,6 +265,7 @@ header {
 }
 
 .leadimg {
+    margin-bottom: 25px;
     margin-top: 25px;
     width: 100%;
     display: flex;
