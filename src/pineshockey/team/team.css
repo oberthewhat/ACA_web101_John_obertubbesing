@@ -332,4 +332,7 @@ li {
     .writeup p {
         font-size: 100%;
     }
+    .newsline a {
+        animation: none;
+    }
 }
