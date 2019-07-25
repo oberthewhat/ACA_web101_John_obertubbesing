@@ -1,0 +1,23 @@
+.sidebar {
+    height: 100vh;
+}
+
+.mainbody {
+    height: 100vh;
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.mainbody .navbar {
+    width: 100%;
+}
+
+.mainbody .navbar form {
+    width: 100%;
+}
+
+.mainbody .navbar form input {
+    flex: 1;
+}
