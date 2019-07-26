@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.border {
+    border: 1px solid red;
+}
+
+body {
+    border-top: 6px solid orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body h2 {
+    margin-bottom: 25px;
+    font-size: 80px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    width: 750px;
+    height: 400px;
+}
+
+.ringsnap {
+    height: 30px;
+    width: 125px;
+}
+
+.tower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 39px;
+    background: url(./towerpole.png);
+    background-size: contain;
+}
+
+.ring {
+    border: 1px solid black;
+    height: 30px;
+}
+
+.red {
+    background-color: red;
+    border-radius: 5px;
+    width: 50px;
+}
+
+.green {
+    background-color: green;
+    border-radius: 5px;
+    width: 75px;
+}
+
+.blue {
+    background-color: blue;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.yellow {
+    background-color: yellow;
+    border-radius: 5px;
+    width: 125px;
+}
