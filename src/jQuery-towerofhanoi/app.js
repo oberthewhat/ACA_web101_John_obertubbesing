@@ -20,5 +20,5 @@
 //Basic Drag and snap function
 
 $(function() {
-    $(".tower").children().first().draggable({ grid: [10, 10] }).last();
+    $(".tower").children().draggable({ grid: [10, 10] });
 });
