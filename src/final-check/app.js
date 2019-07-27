@@ -21,7 +21,7 @@ window.onload = function() {
         if (second == 60) {
             second = 60;
         }
-        if (second == 1) {
+        if (second == 0) {
             document.getElementById("timer").innerHTML = "Buzz!";
             button.onclick = function() {
                 count = count;
