@@ -220,6 +220,8 @@ header {
     text-decoration: none;
     color: inherit;
     font-weight: 500;
+    animation: ticker 6s;
+    animation-iteration-count: infinite;
 }
 
 .newsline a:hover {
@@ -353,6 +355,18 @@ a {
     width: 100%;
 }
 
+@keyframes ticker {
+    0% {
+        transform: translateX(150px)
+    }
+    50% {
+        transform: translateX(75vw)
+    }
+    100% {
+        transform: translateX(150px)
+    }
+}
+
 @keyframes skate {
     0% {
         transform: translateX(100vw);
@@ -373,6 +387,10 @@ a {
     }
     .mobilenav {
         display: flex;
+    }
+    .newsline a {
+        animation: none;
+        padding-left: 40%;
     }
     .nav {
         display: flex;
