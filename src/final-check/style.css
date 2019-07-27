@@ -29,6 +29,7 @@ button {
     background-size: cover;
     border: none;
     outline: none;
+    cursor: crosshair;
 }
 
 .text {
