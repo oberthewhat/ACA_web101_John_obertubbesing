@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <h3>Score goals on McGlasson!</h3><br>
+        <h2>Just click where you want to shoot.</h2>
+        <div class="text">
+            <h2>Goals</h2>
+            <h2>Time</h2>
+        </div>
+
+        <div class="score">
+
+            <div id="goals">0</div>
+            <div class="timer">
+                <h1 id="timer"></h1>
+            </div>
+        </div>
+        <button id="clickme"></button>
+
+    </div>
+    <script src="lib/easytimer/dist/easytimer.min.js"></script>
+    <script>
+        var timerInstance = new easytimer.Timer();
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
