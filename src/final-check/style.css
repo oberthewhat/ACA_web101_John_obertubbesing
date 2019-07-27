@@ -69,3 +69,7 @@ button {
     align-items: center;
     font-size: 40px;
 }
+
+iframe {
+    overflow: hidden;
+}
