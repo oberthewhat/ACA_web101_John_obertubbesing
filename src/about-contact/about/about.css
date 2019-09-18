@@ -1,0 +1,105 @@
+/* Include 6 of the following:
+p~~~~~~~~~~~~~~~~~~~~~~~~~~
+h1, h2, h3, h4, h5, h6~~~~~~~~~~~~~~
+ol, ul~~~~~~~~~~~~~~~~
+pre
+address
+blockquote~~~~~~~~~~~
+dl
+div~~~~~~~~~~~~~
+fieldset
+form
+hr~~~~~~~~~~~~~~
+noscript
+table
+
+Include 8 of the following:
+<b>~~~~~~~~~~~~~~
+<i>~~~~~~~~~~~~~~~
+<u>
+<em>
+<strong>~~~~~~~~~~~~
+<sup>
+<sub>
+<big>
+<small>~~~~~~~~~~~~~
+<li>~~~~~~~~~~~~
+<ins>~~~~~~~~~~~
+<del>~~~~~~~~~~~~
+<code>
+<cite>
+<dfn>
+<kbd>
+<var> */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(243, 153, 120);
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid gray;
+}
+
+img {
+    margin-top: 25px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 6px;
+    border: 7px solid rgba(255, 255, 255, 0.781);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 20px;
+    grid-gap: 20px;
+}
+
+.right {
+    margin-right: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+blockquote li {
+    margin-top: 15px;
+    float: right;
+}
+
+@media (max-widtH: 500PX) {
+    header {
+        font-size: 100px;
+    }
+    img {
+        height: 60px;
+        width: 60px;
+        margin-top: 18px;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+}
