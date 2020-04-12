@@ -4,6 +4,14 @@
             font-family: 'Open Sans Condensed', sans-serif;
             text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.5);
         }
+
+        ul a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul a:hover {
+            color:#6ba8a9 ;
+        }
         
         .wrapper {
             display: grid;
