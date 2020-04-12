@@ -118,24 +118,25 @@
             .profile-text {
                 font-size: 35px;
                 letter-spacing: 11px;
-                margin-top: -32px;
-                margin-left: 10%;
+                margin-top: -16px;
+                margin-left: 5%;
             }
             img {
                 display: inline-block;
-                margin: -3px 26%;
+                margin-left: 13px;
+                margin: -3px 20%;
             }
             .skills {
                 grid-column: 1 / 5;
                 grid-row: 2;
                 width: auto;
-                border-bottom: 2px solid #8d8741;
+                border-bottom: 2px solid #1d4d4f;
             }
             .experience {
                 grid-column: 1 / 5;
                 grid-row: 3;
                 width: auto;
-                border-bottom: 2px solid #8d8741;
+                border-bottom: 2px solid #1d4d4f;
             }
             .heading {
                 font-weight: bold;
@@ -146,6 +147,6 @@
                 grid-column: 1 / 5;
                 grid-row: 4;
                 width: auto;
-                border-bottom: 2px solid #8d8741;
+                border-bottom: 2px solid #1d4d4f;
             }
         }
