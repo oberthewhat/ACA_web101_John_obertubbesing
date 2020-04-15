@@ -12,6 +12,21 @@
         ul a:hover {
             color:#6ba8a9 ;
         }
+
+        .linkbox {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .linkbox a {
+            font-size: 50px;
+            color: inherit;
+            opacity: .5;
+        }
+
+        .linkbox a:hover {
+            opacity: 1;
+        }
         
         .wrapper {
             display: grid;
